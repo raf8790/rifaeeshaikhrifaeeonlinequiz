@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ശൈഖ് രിഫാഈ (റ) ഓൺലൈൻ ക്വിസ് 2026 - SSF Perumalabad</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for Malayalam & English -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Noto+Sans+Malayalam:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Canvas Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <style>
+        body {
+            font-family: 'Noto Sans Malayalam', 'Manrope', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+            color: #f8fafc;
+            min-height: 100vh;
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gold-text {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-border {
+            border-color: #f59e0b;
+        }
+        .glow-btn {
+            box-shadow: 0 0 20px rgba(245, 158, 11, 0.3);
+            transition: all 0.3s ease;
+        }
+        .glow-btn:hover {
+            box-shadow: 0 0 30px rgba(245, 158, 11, 0.5);
+            transform: translateY(-2px);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+    </style>
+</head>
+<body class="flex flex-col justify-between min-h-screen">
+
+    <!-- Header / Navbar -->
+    <header class="w-full border-b border-slate-800 bg-slate-900/80 backdrop-filter blur-md sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-3 space-x-reverse">
+                <div class="w-10 h-10 rounded-full bg-emerald-600 flex items-center justify-center font-bold text-lg text-white shadow-lg">
+                    SSF
+                </div>
+                <div>
+                    <h1 class="font-bold text-sm md:text-base text-emerald-400">SSF PERUMALABAD UNIT</h1>
+                    <p class="text-xs text-slate-400">ഓൺലൈൻ ക്വിസ് പോർട്ടൽ 2026</p>
+                </div>
+            </div>
+            <div class="hidden sm:block">
+                <span class="px-3 py-1 text-xs rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20 font-medium">
+                    <i class="fa-solid fa-calendar-days mr-1"></i> 2026 ഒക്ടോബർ 29
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="flex-grow max-w-4xl w-full mx-auto p-4 sm:p-6 my-4">
+
+        <!-- 1. LANDING & COUNTDOWN PAGE -->
+        <div id="landing-page" class="space-y-6">
+            <!-- Banner Card -->
+            <div class="glass-card rounded-2xl p-6 md:p-10 text-center relative overflow-hidden shadow-2xl">
+                <div class="absolute -top-12 -right-12 w-40 h-40 bg-amber-500/10 rounded-full blur-2xl"></div>
+                <div class="absolute -bottom-12 -left-12 w-40 h-40 bg-emerald-500/10 rounded-full blur-2xl"></div>
+
+                <div class="inline-block px-4 py-1.5 rounded-full bg-amber-500/10 text-amber-300 text-xs sm:text-sm font-semibold mb-4 border border-amber-500/30">
+                    <i class="fa-solid fa-star text-amber-400 mr-1"></i> SSF പെരുമാളാബാദ് യൂണിറ്റ്
+                </div>
+
+                <h2 class="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white mb-3 leading-tight">
+                    ശൈഖ് അഹ്‌മദുൽ കബീർ രിഫാഈ (റ)<br>
+                    <span class="gold-text">ഓൺലൈൻ ക്വിസ് മത്സരം 2026</span>
+                </h2>
+
+                <p class="text-slate-300 text-sm sm:text-base max-w-xl mx-auto mb-6">
+                    മഹാനായ ശൈഖ് രിഫാഈ (റ) തങ്ങളുടെ ജീവചരിത്രവും സന്ദേശങ്ങളും ആസ്പദമാക്കി സംഘടിപ്പിക്കുന്ന ഓൺലൈൻ ക്വിസ് മത്സരം.
+                </p>
+
+                <!-- Date & Time Info Badge -->
+                <div class="bg-slate-900/70 border border-slate-700/80 rounded-xl p-4 max-w-md mx-auto mb-8 shadow-inner">
+                    <div class="flex items-center justify-around text-center">
+                        <div>
+                            <div class="text-xs text-slate-400 uppercase tracking-wider mb-1">തീയതി</div>
+                            <div class="text-sm sm:text-base font-bold text-amber-400">2026 ഒക്ടോബർ 29</div>
+                            <div class="text-xs text-slate-300">വ്യാഴാഴ്ച</div>
+                        </div>
+                        <div class="w-px h-8 bg-slate-700"></div>
+                        <div>
+                            <div class="text-xs text-slate-400 uppercase tracking-wider mb-1">സമയം</div>
+                            <div class="text-sm sm:text-base font-bold text-amber-400">8:00 PM</div>
+                            <div class="text-xs text-slate-300">രാത്രി</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live Countdown -->
+                <div class="mb-8">
+                    <h3 class="text-xs sm:text-sm text-slate-400 uppercase tracking-wider mb-3">മത്സരം ആരംഭിക്കാൻ ഇനി:</h3>
+                    <div class="grid grid-cols-4 gap-2 sm:gap-4 max-w-xs sm:max-w-md mx-auto">
+                        <div class="bg-slate-800/80 p-3 rounded-lg border border-slate-700 text-center">
+                            <span id="cd-days" class="block text-xl sm:text-3xl font-extrabold text-emerald-400">00</span>
+                            <span class="text-[10px] sm:text-xs text-slate-400">ദിവസം</span>
+                        </div>
+                        <div class="bg-slate-800/80 p-3 rounded-lg border border-slate-700 text-center">
+                            <span id="cd-hours" class="block text-xl sm:text-3xl font-extrabold text-emerald-400">00</span>
+                            <span class="text-[10px] sm:text-xs text-slate-400">മണിക്കൂർ</span>
+                        </div>
+                        <div class="bg-slate-800/80 p-3 rounded-lg border border-slate-700 text-center">
+                            <span id="cd-mins" class="block text-xl sm:text-3xl font-extrabold text-emerald-400">00</span>
+                            <span class="text-[10px] sm:text-xs text-slate-400">മിനിറ്റ്</span>
+                        </div>
+                        <div class="bg-slate-800/80 p-3 rounded-lg border border-slate-700 text-center">
+                            <span id="cd-secs" class="block text-xl sm:text-3xl font-extrabold text-emerald-400">00</span>
+                            <span class="text-[10px] sm:text-xs text-slate-400">സെക്കൻഡ്</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Button / Registration Locked Notice -->
+                <div class="space-y-4">
+                    <div class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-300 font-bold text-base sm:text-lg animate-pulse">
+                        <i class="fa-solid fa-clock text-amber-400"></i>
+                        <span>മത്സര രെജിസ്ട്രേഷൻ ഉടൻ ആരംഭിക്കും കാത്തിരിക്കുക</span>
+                    </div>
+                    <div>
+                        <button disabled class="px-8 py-3.5 rounded-xl bg-slate-800/80 border border-slate-700 text-slate-500 font-extrabold text-base shadow-lg cursor-not-allowed inline-flex items-center space-x-2 space-x-reverse select-none">
+                            <i class="fa-solid fa-lock text-sm"></i>
+                            <span>രെജിസ്ട്രേഷൻ ആരംഭിച്ചതിനു ശേഷം ലിങ്ക് ഓപ്പൺ ആകുന്നതാണ്</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quiz Rules / Updates Card -->
+            <div class="glass-card rounded-2xl p-6 shadow-xl text-center">
+                <div class="w-12 h-12 bg-amber-500/10 text-amber-400 rounded-full flex items-center justify-center mx-auto mb-3 text-xl border border-amber-500/20">
+                    <i class="fa-solid fa-bullhorn"></i>
+                </div>
+                <h3 class="text-lg font-bold text-amber-400 mb-2">
+                    മത്സര നിയമാവലി & വിവരങ്ങൾ
+                </h3>
+                <p class="text-sm text-slate-300 leading-relaxed max-w-lg mx-auto bg-slate-900/60 p-4 rounded-xl border border-slate-800">
+                    ക്വിസ് മത്സരത്തിന്റെ പൂർണ്ണമായ നിയമാവലിയും മത്സര രീതിയും ഉടൻ അപ്ഡേറ്റ് ചെയ്യുന്നതാണ്. വിവരങ്ങൾ അറിയാൻ കാത്തിരിക്കുക.
+                </p>
+            </div>
+        </div>
+
+        <!-- 2. REGISTRATION FORM PAGE -->
+        <div id="register-page" class="hidden glass-card rounded-2xl p-6 sm:p-10 shadow-2xl max-w-lg mx-auto">
+            <div class="text-center mb-8">
+                <div class="w-12 h-12 bg-amber-500/10 text-amber-400 rounded-full flex items-center justify-center mx-auto mb-3 text-xl border border-amber-500/20">
+                    <i class="fa-solid fa-user-pen"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-white">രജിസ്ട്രേഷൻ</h2>
+                <p class="text-xs text-slate-400 mt-1">മത്സരത്തിൽ പങ്കെടുക്കുന്നതിനായി വിവരങ്ങൾ നൽകുക</p>
+            </div>
+
+            <form id="quiz-register-form" onsubmit="startQuiz(event)" class="space-y-5">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">പൂർണ്ണമായ പേര് *</label>
+                    <input type="text" id="user-name" required placeholder="ഉദാഹരണത്തിന്: മുഹമ്മദ് അലി" class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-700 text-white focus:outline-none focus:border-amber-500 transition-colors">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">മൊബൈൽ നമ്പർ *</label>
+                    <input type="tel" id="user-phone" required pattern="[0-9]{10}" placeholder="10 അക്ക മൊബൈൽ നമ്പർ" class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-700 text-white focus:outline-none focus:border-amber-500 transition-colors">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">യൂണിറ്റ് / സ്ഥലം *</label>
+                    <input type="text" id="user-unit" required placeholder="ഉദാഹരണത്തിന്: പെരുമാളാബാദ്" class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-700 text-white focus:outline-none focus:border-amber-500 transition-colors">
+                </div>
+
+                <div class="pt-4 flex gap-3">
+                    <button type="button" onclick="showLanding()" class="w-1/3 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold transition-colors">
+                        പിന്നോട്ട്
+                    </button>
+                    <button type="submit" class="w-2/3 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold transition-colors shadow-lg">
+                        ക്വിസ് ആരംഭിക്കുക <i class="fa-solid fa-play ml-2"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- 3. QUIZ QUESTIONS PAGE -->
+        <div id="quiz-page" class="hidden space-y-6">
+            <!-- Participant Info Bar -->
+            <div class="glass-card rounded-xl p-4 flex justify-between items-center text-xs sm:text-sm">
+                <div class="flex items-center space-x-2 space-x-reverse">
+                    <i class="fa-solid fa-user text-amber-400"></i>
+                    <span id="quiz-participant-name" class="font-bold text-white"></span>
+                </div>
+                <div class="text-slate-400">
+                    ചോദ്യം: <span id="current-question-num" class="text-amber-400 font-bold">1</span> / 10
+                </div>
+            </div>
+
+            <!-- Question Card -->
+            <div class="glass-card rounded-2xl p-6 sm:p-8 shadow-2xl relative">
+                <div class="mb-6">
+                    <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-semibold border border-emerald-500/20">
+                        ചോദ്യം <span id="q-number-badge">1</span>
+                    </span>
+                    <h3 id="question-text" class="text-lg sm:text-xl font-bold text-white mt-3 leading-relaxed">
+                        -- Loading Question --
+                    </h3>
+                </div>
+
+                <!-- Options -->
+                <div id="options-container" class="space-y-3">
+                    <!-- Options injected via JavaScript -->
+                </div>
+
+                <!-- Navigation Controls -->
+                <div class="mt-8 flex justify-between items-center pt-4 border-t border-slate-800">
+                    <button id="btn-prev" onclick="navigateQuestion(-1)" class="px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-sm font-semibold transition-colors disabled:opacity-40 disabled:cursor-not-allowed">
+                        <i class="fa-solid fa-chevron-right ml-1"></i> മുൻപത്തേത്
+                    </button>
+
+                    <button id="btn-next" onclick="navigateQuestion(1)" class="px-5 py-2.5 rounded-lg bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-sm transition-colors">
+                        അടുത്തത് <i class="fa-solid fa-chevron-left mr-1"></i>
+                    </button>
+
+                    <button id="btn-submit" onclick="submitQuiz()" class="hidden px-6 py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm transition-colors shadow-lg glow-btn">
+                        സബ്മിറ്റ് ചെയ്യുക <i class="fa-solid fa-paper-plane mr-1"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. RESULTS & CERTIFICATE PAGE -->
+        <div id="result-page" class="hidden space-y-6">
+            <div class="glass-card rounded-2xl p-6 sm:p-10 text-center shadow-2xl relative">
+                <div class="w-16 h-16 bg-emerald-500/10 text-emerald-400 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl border border-emerald-500/20">
+                    <i class="fa-solid fa-trophy"></i>
+                </div>
+
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-white mb-1">അഭിനന്ദനങ്ങൾ!</h2>
+                <p class="text-slate-400 text-sm mb-6">നിങ്ങൾ വിജയകരമായി ക്വിസ് പൂർത്തിയാക്കി.</p>
+
+                <!-- Result Card Display -->
+                <div id="certificate-card" class="max-w-md mx-auto bg-slate-900 border-2 gold-border rounded-2xl p-6 shadow-2xl relative text-left">
+                    <div class="text-center border-b border-slate-800 pb-4 mb-4">
+                        <div class="text-xs font-bold text-emerald-400 tracking-wider">SSF PERUMALABAD UNIT</div>
+                        <div class="text-lg font-bold gold-text mt-1">ഓൺലൈൻ ക്വിസ് മത്സരം 2026</div>
+                        <div class="text-[11px] text-slate-400">ശൈഖ് അഹ്‌മദുൽ കബീർ രിഫാഈ (റ) അനുസ്മരണം</div>
+                    </div>
+
+                    <div class="space-y-3 text-sm">
+                        <div class="flex justify-between">
+                            <span class="text-slate-400">മത്സരാർത്ഥി:</span>
+                            <span id="res-name" class="font-bold text-white"></span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-400">സ്ഥലം / യൂണിറ്റ്:</span>
+                            <span id="res-unit" class="font-bold text-slate-200"></span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-400">മൊബൈൽ:</span>
+                            <span id="res-phone" class="font-bold text-slate-200"></span>
+                        </div>
+                        <div class="border-t border-slate-800 pt-3 flex justify-between items-center">
+                            <span class="text-slate-300 font-semibold">ലഭിച്ച മാർക്ക്:</span>
+                            <span id="res-score" class="text-2xl font-extrabold text-amber-400">0 / 100</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-slate-800 text-center">
+                        <div class="text-[10px] text-slate-500 uppercase tracking-wider">പങ്കാളിത്ത സാക്ഷ്യപത്രം</div>
+                        <div class="text-xs text-emerald-400 font-medium mt-1">SSF പെരുമാളാബാദ് യൂണിറ്റ് എക്സിക്യൂട്ടീവ്</div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="mt-8 flex flex-wrap justify-center gap-4">
+                    <button onclick="shareResult()" class="px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm transition-colors shadow-lg flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> ഫലം വാട്‌സാപ്പിൽ ഷെയർ ചെയ്യുക
+                    </button>
+                    <button onclick="resetQuiz()" class="px-6 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold text-sm transition-colors flex items-center gap-2">
+                        <i class="fa-solid fa-rotate-right"></i> വീണ്ടും ശ്രമിക്കുക
+                    </button>
+                </div>
+            </div>
+
+            <!-- Review Answers Section -->
+            <div class="glass-card rounded-2xl p-6 shadow-xl">
+                <h3 class="text-lg font-bold text-white mb-4 flex items-center">
+                    <i class="fa-solid fa-list-check text-amber-400 mr-2"></i> ഉത്തരങ്ങൾ വിലയിരുത്തുക
+                </h3>
+                <div id="review-container" class="space-y-4">
+                    <!-- Injected via Javascript -->
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full border-t border-slate-800 bg-slate-950 py-6 text-center text-xs text-slate-500">
+        <p>© 2026 SSF PERUMALABAD UNIT. All Rights Reserved.</p>
+        <p class="mt-1 text-slate-600">ശൈഖ് രിഫാഈ (റ) ഓൺലൈൻ ക്വിസ് പോർട്ടൽ</p>
+    </footer>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Questions Database in Malayalam
+        const quizQuestions = [
+            {
+                id: 1,
+                question: "ശൈഖ് അഹ്‌മദുൽ കബീർ രിഫാഈ (റ) ജനിച്ച വർഷമേത്?",
+                options: [
+                    "ഹിജ്റ 512",
+                    "ഹിജ്റ 500",
+                    "ഹിജ്റ 550",
+                    "ഹിജ്റ 490"
+                ],
+                correct: 0
+            },
+            {
+                id: 2,
+                question: "ശൈഖ് രിഫാഈ (റ) ഏത് നാടുകാരനാണ്?",
+                options: [
+                    "മദീന",
+                    "ബഗ്ദാദ് (ഇറാഖ്)",
+                    "ഈജിപ്ത്",
+                    "യമൻ"
+                ],
+                correct: 1
+            },
+            {
+                id: 3,
+                question: "ശൈഖ് രിഫാഈ (റ) സ്ഥാപിച്ച് പ്രചരിപ്പിച്ച സൂഫി ത്വരീഖത്ത് ഏതാണ്?",
+                options: [
+                    "ഖാദിരിയ്യ ത്വരീഖത്ത്",
+                    "ചിശ്തിയ്യ ത്വരീഖത്ത്",
+                    "രിഫാഇയ്യ ത്വരീഖത്ത്",
+                    "നഖ്ശബന്ദിയ്യ ത്വരീഖത്ത്"
+                ],
+                correct: 2
+            },
+            {
+                id: 4,
+                question: "ശൈഖ് രിഫാഈ (റ) തങ്ങളുടെ പ്രധാനപ്പെട്ട ഉസ്താദ് (ഗുരു) ആര്?",
+                options: [
+                    "ശൈഖ് അബുൽ വഫാ (റ)",
+                    "ഇമാം ഗസാലി (റ)",
+                    "അബൂത്വാലിബ് അൽ മക്കീ (റ)",
+                    "ഇമാം റഫാഈ (റ)"
+                ],
+                correct: 0
+            },
+            {
+                id: 5,
+                question: "നബി(സ) തങ്ങളുടെ പവിത്രമായ കൈവെള്ള പുറത്തെടുത്ത് ശൈഖ് രിഫാഈ (റ) മുത്തം വെച്ച പ്രസിദ്ധമായ സംഭവം നടന്ന സ്ഥലം ഏതാണ്?",
+                options: [
+                    "മക്ക (മസ്ജിദുൽ ഹറാം)",
+                    "മദീന (മസ്ജിദുന്നബവി)",
+                    "ബൈത്തുൽ മുഖദ്ദസ്",
+                    "കുഫ"
+                ],
+                correct: 1
+            },
+            {
+                id: 6,
+                question: "ശൈഖ് രിഫാഈ (റ) തങ്ങളുടെ പ്രധാന സ്വഭാവ മഹിമയായി അറിയപ്പെടുന്നത് എന്തായിരുന്നു?",
+                options: [
+                    "വിനയവും വിനമ്രതയും (തവാളൂഅ്)",
+                    "ധീരത",
+                    "ഭരണ നൈപുണ്യം",
+                    "കവിത്വ ഗുണം"
+                ],
+                correct: 0
+            },
+            {
+                id: 7,
+                question: "ശൈഖ് രിഫാഈ (റ) തങ്ങളുടെ മാതാവിന്റെ നാമം എന്താണ്?",
+                options: [
+                    "ഫാത്തിമ ബിൻത് യഹ്‌യ",
+                    "ആമിന ബീവി",
+                    "സൈനബ് ബീവി",
+                    "ഖദീജ ബീവി"
+                ],
+                correct: 0
+            },
+            {
+                id: 8,
+                question: "ശൈഖ് രിഫാഈ (റ) വഫാത്തായ വർഷം (ഹിജ്റ) ഏതാണ്?",
+                options: [
+                    "ഹിജ്റ 578",
+                    "ഹിജ്റ 600",
+                    "ഹിജ്റ 550",
+                    "ഹിജ്റ 610"
+                ],
+                correct: 0
+            },
+            {
+                id: 9,
+                question: "രിഫാഈ മൗലിദ് / റാത്തീബ് പ്രധാനമായും രചിക്കപ്പെട്ടത് ആരുടെ തവസ്സുൽ ആധാരമാക്കിയാണ്?",
+                options: [
+                    "ശൈഖ് ജീലാനി (റ)",
+                    "ശൈഖ് രിഫാഈ (റ)",
+                    "ഇമാം ബൂസ്വീരി (റ)",
+                    "ഇമാം ശാഫിഇ (റ)"
+                ],
+                correct: 1
+            },
+            {
+                id: 10,
+                question: "ഈ ക്വിസ് മത്സരം സംഘടിപ്പിക്കുന്നത് ഏത് സംഘടനയുടെ യൂണിറ്റാണ്?",
+                options: [
+                    "SYS",
+                    "SSF PERUMALABAD UNIT",
+                    "SJM",
+                    "KSM"
+                ],
+                correct: 1
+            }
+        ];
+
+        // State Variables
+        let currentQuestionIndex = 0;
+        let userAnswers = {}; // { qIndex: selectedOptionIndex }
+        let participantData = {
+            name: '',
+            phone: '',
+            unit: ''
+        };
+
+        // DOM Elements
+        const landingPage = document.getElementById('landing-page');
+        const registerPage = document.getElementById('register-page');
+        const quizPage = document.getElementById('quiz-page');
+        const resultPage = document.getElementById('result-page');
+
+        // Navigation Helpers
+        function showRegistration() {
+            landingPage.classList.add('hidden');
+            registerPage.classList.remove('hidden');
+            quizPage.classList.add('hidden');
+            resultPage.classList.add('hidden');
+        }
+
+        function showLanding() {
+            registerPage.classList.add('hidden');
+            landingPage.classList.remove('hidden');
+        }
+
+        // Start Quiz after Registration
+        function startQuiz(event) {
+            event.preventDefault();
+            participantData.name = document.getElementById('user-name').value.trim();
+            participantData.phone = document.getElementById('user-phone').value.trim();
+            participantData.unit = document.getElementById('user-unit').value.trim();
+
+            if (!participantData.name || !participantData.phone || !participantData.unit) {
+                alert('ദയവായി എല്ലാ വിവരങ്ങളും പൂരിപ്പിക്കുക.');
+                return;
+            }
+
+            document.getElementById('quiz-participant-name').innerText = participantData.name;
+
+            registerPage.classList.add('hidden');
+            quizPage.classList.remove('hidden');
+
+            currentQuestionIndex = 0;
+            userAnswers = {};
+            renderQuestion();
+        }
+
+        // Render Current Question
+        function renderQuestion() {
+            const qData = quizQuestions[currentQuestionIndex];
+            document.getElementById('q-number-badge').innerText = currentQuestionIndex + 1;
+            document.getElementById('current-question-num').innerText = currentQuestionIndex + 1;
+            document.getElementById('question-text').innerText = qData.question;
+
+            const optionsContainer = document.getElementById('options-container');
+            optionsContainer.innerHTML = '';
+
+            qData.options.forEach((opt, idx) => {
+                const isSelected = userAnswers[currentQuestionIndex] === idx;
+                const optionBtn = document.createElement('button');
+                optionBtn.type = 'button';
+                optionBtn.onclick = () => selectOption(idx);
+                optionBtn.className = `w-full text-left p-4 rounded-xl border transition-all flex items-center justify-between cursor-pointer ${
+                    isSelected 
+                        ? 'bg-amber-500/20 border-amber-500 text-amber-300 font-semibold shadow-md' 
+                        : 'bg-slate-900/60 border-slate-700/80 text-slate-200 hover:bg-slate-800 hover:border-slate-600'
+                }`;
+
+                optionBtn.innerHTML = `
+                    <div class="flex items-center space-x-3 space-x-reverse">
+                        <span class="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold ${
+                            isSelected ? 'bg-amber-500 text-slate-950' : 'bg-slate-800 text-slate-400'
+                        }">
+                            ${String.fromCharCode(65 + idx)}
+                        </span>
+                        <span class="text-sm sm:text-base">${opt}</span>
+                    </div>
+                    ${isSelected ? '<i class="fa-solid fa-circle-check text-amber-400 text-lg"></i>' : ''}
+                `;
+                optionsContainer.appendChild(optionBtn);
+            });
+
+            // Handle Buttons
+            document.getElementById('btn-prev').disabled = currentQuestionIndex === 0;
+
+            if (currentQuestionIndex === quizQuestions.length - 1) {
+                document.getElementById('btn-next').classList.add('hidden');
+                document.getElementById('btn-submit').classList.remove('hidden');
+            } else {
+                document.getElementById('btn-next').classList.remove('hidden');
+                document.getElementById('btn-submit').classList.add('hidden');
+            }
+        }
+
+        // Option Selection Handler
+        function selectOption(optionIndex) {
+            userAnswers[currentQuestionIndex] = optionIndex;
+            renderQuestion();
+        }
+
+        // Navigate Questions
+        function navigateQuestion(direction) {
+            currentQuestionIndex += direction;
+            if (currentQuestionIndex < 0) currentQuestionIndex = 0;
+            if (currentQuestionIndex >= quizQuestions.length) currentQuestionIndex = quizQuestions.length - 1;
+            renderQuestion();
+        }
+
+        // Submit Quiz
+        function submitQuiz() {
+            const answeredCount = Object.keys(userAnswers).length;
+            if (answeredCount < quizQuestions.length) {
+                if (!confirm(`നിങ്ങൾ ${quizQuestions.length} ചോദ്യങ്ങളിൽ ${answeredCount} എണ്ണത്തിന് മാത്രമാണ് ഉത്തരം നൽകിയിട്ടുള്ളത്. സബ്മിറ്റ് ചെയ്യണോ?`)) {
+                    return;
+                }
+            }
+
+            // Calculate Score
+            let score = 0;
+            quizQuestions.forEach((q, idx) => {
+                if (userAnswers[idx] === q.correct) {
+                    score += 10;
+                }
+            });
+
+            // Display Results
+            document.getElementById('res-name').innerText = participantData.name;
+            document.getElementById('res-unit').innerText = participantData.unit;
+            document.getElementById('res-phone').innerText = participantData.phone;
+            document.getElementById('res-score').innerText = `${score} / 100`;
+
+            // Render Answers Review
+            renderReview();
+
+            quizPage.classList.add('hidden');
+            resultPage.classList.remove('hidden');
+
+            // Trigger Confetti Celebration if high score
+            if (score >= 60 && typeof confetti === 'function') {
+                confetti({
+                    particleCount: 100,
+                    spread: 70,
+                    origin: { y: 0.6 }
+                });
+            }
+        }
+
+        // Render Answer Review Section
+        function renderReview() {
+            const reviewContainer = document.getElementById('review-container');
+            reviewContainer.innerHTML = '';
+
+            quizQuestions.forEach((q, idx) => {
+                const userSelected = userAnswers[idx];
+                const isCorrect = userSelected === q.correct;
+
+                const item = document.createElement('div');
+                item.className = `p-4 rounded-xl border ${
+                    isCorrect ? 'bg-emerald-950/30 border-emerald-500/30' : 'bg-rose-950/30 border-rose-500/30'
+                }`;
+
+                item.innerHTML = `
+                    <div class="flex items-start justify-between mb-2">
+                        <span class="text-xs font-bold text-slate-400">ചോദ്യം ${idx + 1}</span>
+                        <span class="text-xs px-2 py-0.5 rounded ${
+                            isCorrect ? 'bg-emerald-500/20 text-emerald-400' : 'bg-rose-500/20 text-rose-400'
+                        }">
+                            ${isCorrect ? 'ശരി' : 'തെറ്റ്'}
+                        </span>
+                    </div>
+                    <p class="text-sm font-semibold text-white mb-2">${q.question}</p>
+                    <div class="text-xs space-y-1">
+                        <div class="${isCorrect ? 'text-emerald-400 font-medium' : 'text-rose-400'}">
+                            നിങ്ങളുടെ ഉത്തരം: ${userSelected !== undefined ? q.options[userSelected] : 'ഉത്തരം നൽകിയില്ല'}
+                        </div>
+                        ${!isCorrect ? `<div class="text-emerald-400 font-medium">ശരിയായ ഉത്തരം: ${q.options[q.correct]}</div>` : ''}
+                    </div>
+                `;
+                reviewContainer.appendChild(item);
+            });
+        }
+
+        // Reset Quiz
+        function resetQuiz() {
+            userAnswers = {};
+            currentQuestionIndex = 0;
+            resultPage.classList.add('hidden');
+            landingPage.classList.remove('hidden');
+        }
+
+        // WhatsApp Share
+        function shareResult() {
+            const scoreText = document.getElementById('res-score').innerText;
+            const message = `*ശൈഖ് രിഫാഈ (റ) ഓൺലൈൻ ക്വിസ് മത്സരം 2026*\n*SSF PERUMALABAD UNIT*\n\nപേര്: ${participantData.name}\nസ്ഥലം: ${participantData.unit}\nമാർക്ക്: ${scoreText}\n\nനിങ്ങളും ക്വിസ് മത്സരത്തിൽ പങ്കെടുക്കൂ!`;
+            const encoded = encodeURIComponent(message);
+            window.open(`https://api.whatsapp.com/send?text=${encoded}`, '_blank');
+        }
+
+        // Countdown Timer Target: October 29, 2026 20:00:00
+        const targetDate = new Date("2026-10-29T20:00:00").getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            if (distance < 0) {
+                document.getElementById('cd-days').innerText = "00";
+                document.getElementById('cd-hours').innerText = "00";
+                document.getElementById('cd-mins').innerText = "00";
+                document.getElementById('cd-secs').innerText = "00";
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('cd-days').innerText = days < 10 ? '0' + days : days;
+            document.getElementById('cd-hours').innerText = hours < 10 ? '0' + hours : hours;
+            document.getElementById('cd-mins').innerText = minutes < 10 ? '0' + minutes : minutes;
+            document.getElementById('cd-secs').innerText = seconds < 10 ? '0' + seconds : seconds;
+        }
+
+        // Initialize Countdown
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+</body>
+</html>
